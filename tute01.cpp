@@ -18,13 +18,19 @@ printf("Hello World") --> std::cout << "Hello World";
 */
 
 
-#include <stdio.h>
-int main() 
+#include<iostream> //preprocessing directive
+using namespace std;
+
+int main()
 {
-    float cm,inches;
-    std::cout << "Enter a length in cm : ";
-    std::cin >> cm;
-    inches = cm / 2.54;
-    std::cout << "Length in inches is:  ",inches;
-    return 0;
-}  
+  float cm,inches; //declaring variables
+  
+  cout<<"Enter a length in cm :"<<endl; //getting user input
+  cin>>cm;
+  
+  inches=cm/2.54; //calculating
+  
+  cout<<"Length in inches is :"<<inches<<endl; //display the output
+  
+return 0;
+}
